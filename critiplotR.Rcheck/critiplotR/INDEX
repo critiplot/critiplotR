@@ -1,0 +1,9 @@
+plot_grade              Generate a GRADE certainty-of-evidence plot
+plot_jbi_case_report    Generate a JBI Case Report risk-of-bias plot
+plot_jbi_case_series    Generate a JBI Case Series risk-of-bias plot
+plot_mmat               Generate MMAT (Mixed Methods Appraisal Tool)
+                        plots
+plot_nos                Generate a NOS (Newcastle–Ottawa Scale)
+                        risk-of-bias plot
+plot_robis              Generate a ROBIS (Risk Of Bias In Systematic
+                        reviews) plot
