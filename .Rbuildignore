@@ -6,4 +6,5 @@
 ^\.github$
 ^figures-gallery\.R$
 ^_pkgdown\.yml$
+^pkgdown$
 ^docs$
