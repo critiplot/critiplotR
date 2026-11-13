@@ -4,30 +4,36 @@
 \alias{plot_grade}
 \title{Generate a GRADE certainty-of-evidence plot}
 \usage{
-plot_grade(input_file, output_file, theme = "default")
+plot_grade(input_file, output_file, theme = "default", verbose = FALSE)
 }
 \arguments{
-\item{input_file}{Path to input CSV or Excel file with GRADE data.}
+\item{input_file}{A data frame with GRADE data, or a path to a CSV or Excel
+file (\code{.csv}, \code{.xls}, \code{.xlsx}) containing it.}
 
-\item{output_file}{Path where the plot image will be saved (e.g., ".png").}
+\item{output_file}{Path where the plot will be saved. The file extension
+must be one of \code{"png"}, \code{"pdf"}, \code{"svg"}, or \code{"eps"}.}
 
-\item{theme}{Theme name. Options for GRADE: "default", "green", "blue".
-Default is "default".}
+\item{theme}{Colour theme. One of \code{"default"}, \code{"green"}, or \code{"blue"}.}
+
+\item{verbose}{If \code{TRUE}, relay the messages printed by the Python
+package to the R console.}
 }
 \value{
-Invisibly returns \code{output_file} on success.
+Invisibly returns the normalized path to the created file.
 }
 \description{
-Generate a GRADE certainty-of-evidence plot
+Creates a GRADE evidence profile plot summarising risk of bias,
+inconsistency, indirectness, imprecision, publication bias, and overall
+certainty of evidence.
 }
 \examples{
-\dontshow{if (reticulate::py_module_available("critiplot")) withAutoprint(\{ # examplesIf}
 \dontrun{
-  plot_grade(
-    input_file = system.file("extdata", "sample_grade.csv", package = "critiplotR"),
-    output_file = tempfile(fileext = ".png"),
-    theme = "green"
-  )
+plot_grade(
+  input_file = system.file("extdata", "sample_grade.csv", package = "critiplotR"),
+  output_file = tempfile(fileext = ".png")
+)
 }
-\dontshow{\}) # examplesIf}
+}
+\seealso{
+\link{critiplotR} for the Python requirement and input data details.
 }

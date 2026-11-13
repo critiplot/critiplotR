@@ -1,77 +1,51 @@
 #' Generate a JBI Case Report risk-of-bias plot
 #'
-#' @param input_file Path to input CSV or Excel file with JBI Case Report data.
-#' @param output_file Path where the plot image will be saved (e.g., ".png").
-#' @param theme Theme name. Options: "default", "blue", "gray", "smiley", "smiley_blue".
-#'   Default is "default".
+#' Creates a traffic-light plot and a stacked bar chart summarising the JBI
+#' critical appraisal checklist for case reports.
 #'
-#' @return Invisibly returns \code{output_file} on success.
+#' Categorical judgements such as `"Yes"`, `"No"`, `"Unclear"`, and
+#' `"Not Applicable"` are normalized by the Python package itself, so the
+#' input file can contain either these values or their `1`/`0` equivalents.
+#'
+#' @param input_file A data frame with JBI case report data, or a path to a
+#'   CSV or Excel file (`.csv`, `.xls`, `.xlsx`) containing it.
+#' @param output_file Path where the plot will be saved. The file extension
+#'   must be one of `"png"`, `"pdf"`, `"svg"`, or `"eps"`.
+#' @param theme Colour theme. One of `"default"`, `"blue"`, `"gray"`,
+#'   `"smiley"`, or `"smiley_blue"`.
+#' @param verbose If `TRUE`, relay the messages printed by the Python
+#'   package to the R console.
+#'
+#' @return Invisibly returns the normalized path to the created file.
+#'
+#' @seealso [critiplotR] for the Python requirement and input data details.
 #'
 #' @export
-#' @examplesIf reticulate::py_module_available("critiplot")
+#' @examples
 #' \dontrun{
-#'   plot_jbi_case_report(
-#'     input_file = system.file("extdata", "sample_jbi_case_report.csv", package = "critiplotR"),
-#'     output_file = tempfile(fileext = ".png"),
-#'     theme = "default"
-#'   )
+#' plot_jbi_case_report(
+#'   input_file = system.file(
+#'     "extdata", "sample_jbi_case_report.csv", package = "critiplotR"
+#'   ),
+#'   output_file = tempfile(fileext = ".png")
+#' )
 #' }
-plot_jbi_case_report <- function(input_file, output_file, theme = "default") {
+plot_jbi_case_report <- function(input_file, output_file, theme = "default",
+                                 verbose = FALSE) {
+  check_output_file(output_file)
+  theme <- check_theme(theme, critiplot_themes)
+  input_file <- prepare_input(input_file)
+  on.exit(cleanup_input(input_file), add = TRUE)
   crit <- get_critiplot_module()
 
-  if (!file.exists(input_file)) {
-    stop("Input file does not exist: ", input_file)
-  }
-
-
-  normalize_jbi_value <- function(val) {
-    if (is.na(val)) return("Unclear")
-    
-    s_val <- tolower(as.character(val))
-    s_val <- trimws(s_val)
-    
-
-    if (s_val %in% c("1", "yes", "low")) return("1")
-    if (s_val %in% c("0", "no", "high")) return("0")
-    if (s_val %in% c("unclear", "?")) return("Unclear")
-    if (s_val %in% c("not applicable", "n/a", "na")) return("Not Applicable")
-    
-    return("Unclear") 
-  }
-
-
-  df <- suppressWarnings(read.csv(input_file, stringsAsFactors = FALSE))
-
-
-  if ("Author, Year" %in% names(df) && !("Author,Year" %in% names(df))) {
-    names(df)[names(df) == "Author, Year"] <- "Author,Year"
-  } else if ("Author" %in% names(df) && "Year" %in% names(df)) {
-    df[["Author,Year"]] <- paste(df[["Author"]], df[["Year"]])
-  }
-
-
-  cols_to_process <- c(
-    "Demographics", "History", "ClinicalCondition", "Diagnostics",
-    "Intervention", "PostCondition", "AdverseEvents", "Lessons", "Overall RoB"
+  run_critiplot(
+    crit$plot_jbi_case_report(input_file, output_file, theme = theme),
+    verbose = verbose
   )
 
-  
-  for (col in cols_to_process) {
-    if (col %in% names(df)) {
-
-      df[[col]] <- sapply(df[[col]], normalize_jbi_value, USE.NAMES = FALSE)
-    }
+  if (!file.exists(output_file)) {
+    stop("critiplot did not create the expected output file: ", output_file,
+         call. = FALSE)
   }
-
-
-  temp_input_file <- tempfile(fileext = ".csv")
-  write.csv(df, temp_input_file, row.names = FALSE)
-
- 
-  crit$plot_jbi_case_report(temp_input_file, output_file, theme = theme)
-
-
-  unlink(temp_input_file)
-
-  invisible(output_file)
+  invisible(normalizePath(output_file))
 }

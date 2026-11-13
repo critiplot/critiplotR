@@ -4,32 +4,41 @@
 \alias{plot_mmat}
 \title{Generate MMAT (Mixed Methods Appraisal Tool) plots}
 \usage{
-plot_mmat(input_file, output_file, theme = "default")
+plot_mmat(input_file, output_file, theme = "default", verbose = FALSE)
 }
 \arguments{
-\item{input_file}{Path to input CSV or Excel file with MMAT data.}
+\item{input_file}{A data frame with MMAT data, or a path to a CSV or Excel
+file (\code{.csv}, \code{.xls}, \code{.xlsx}) containing it.}
 
-\item{output_file}{Path where the plot images will be saved.
-Note: If the data contains multiple study categories (e.g., Qualitative, Randomized),
-multiple files will be generated with the category name appended to this filename.}
+\item{output_file}{Base path for the plot files. The file extension must be
+one of \code{"png"}, \code{"pdf"}, \code{"svg"}, or \code{"eps"}. Category names are appended
+to this name.}
 
-\item{theme}{Theme name. Options: "default", "blue", "gray", "smiley", "smiley_blue".
-Default is "default".}
+\item{theme}{Colour theme. One of \code{"default"}, \code{"blue"}, \code{"gray"},
+\code{"smiley"}, or \code{"smiley_blue"}.}
+
+\item{verbose}{If \code{TRUE}, relay the messages printed by the Python
+package to the R console.}
 }
 \value{
-Invisibly returns \code{output_file} on success.
+Invisibly returns a character vector of the normalized paths of all
+files created, one per study category.
 }
 \description{
-Generate MMAT (Mixed Methods Appraisal Tool) plots
+Creates MMAT traffic-light plots and stacked bar charts. When the data
+contains several study categories, \code{critiplot} writes one plot per category,
+naming each file by appending \verb{_<category>} to the supplied output name.
+For example, an \code{output_file} of \code{"mmat.png"} produces files such as
+\code{"mmat_Qualitative.png"} and \code{"mmat_Randomized.png"}.
 }
 \examples{
-\dontshow{if (reticulate::py_module_available("critiplot")) withAutoprint(\{ # examplesIf}
 \dontrun{
-  plot_mmat(
-    input_file = system.file("extdata", "sample_mmat.csv", package = "critiplotR"),
-    output_file = tempfile(fileext = ".png"),
-    theme = "default"
-  )
+plot_mmat(
+  input_file = system.file("extdata", "sample_mmat.csv", package = "critiplotR"),
+  output_file = tempfile(fileext = ".png")
+)
 }
-\dontshow{\}) # examplesIf}
+}
+\seealso{
+\link{critiplotR} for the Python requirement and input data details.
 }

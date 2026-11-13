@@ -4,30 +4,48 @@
 \alias{plot_jbi_case_report}
 \title{Generate a JBI Case Report risk-of-bias plot}
 \usage{
-plot_jbi_case_report(input_file, output_file, theme = "default")
+plot_jbi_case_report(
+  input_file,
+  output_file,
+  theme = "default",
+  verbose = FALSE
+)
 }
 \arguments{
-\item{input_file}{Path to input CSV or Excel file with JBI Case Report data.}
+\item{input_file}{A data frame with JBI case report data, or a path to a
+CSV or Excel file (\code{.csv}, \code{.xls}, \code{.xlsx}) containing it.}
 
-\item{output_file}{Path where the plot image will be saved (e.g., ".png").}
+\item{output_file}{Path where the plot will be saved. The file extension
+must be one of \code{"png"}, \code{"pdf"}, \code{"svg"}, or \code{"eps"}.}
 
-\item{theme}{Theme name. Options: "default", "blue", "gray", "smiley", "smiley_blue".
-Default is "default".}
+\item{theme}{Colour theme. One of \code{"default"}, \code{"blue"}, \code{"gray"},
+\code{"smiley"}, or \code{"smiley_blue"}.}
+
+\item{verbose}{If \code{TRUE}, relay the messages printed by the Python
+package to the R console.}
 }
 \value{
-Invisibly returns \code{output_file} on success.
+Invisibly returns the normalized path to the created file.
 }
 \description{
-Generate a JBI Case Report risk-of-bias plot
+Creates a traffic-light plot and a stacked bar chart summarising the JBI
+critical appraisal checklist for case reports.
+}
+\details{
+Categorical judgements such as \code{"Yes"}, \code{"No"}, \code{"Unclear"}, and
+\code{"Not Applicable"} are normalized by the Python package itself, so the
+input file can contain either these values or their \code{1}/\code{0} equivalents.
 }
 \examples{
-\dontshow{if (reticulate::py_module_available("critiplot")) withAutoprint(\{ # examplesIf}
 \dontrun{
-  plot_jbi_case_report(
-    input_file = system.file("extdata", "sample_jbi_case_report.csv", package = "critiplotR"),
-    output_file = tempfile(fileext = ".png"),
-    theme = "default"
-  )
+plot_jbi_case_report(
+  input_file = system.file(
+    "extdata", "sample_jbi_case_report.csv", package = "critiplotR"
+  ),
+  output_file = tempfile(fileext = ".png")
+)
 }
-\dontshow{\}) # examplesIf}
+}
+\seealso{
+\link{critiplotR} for the Python requirement and input data details.
 }

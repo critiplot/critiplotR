@@ -1,0 +1,26 @@
+citHeader(
+  "When using critiplotR, please cite the original Critiplot software.",
+  "The second entry is the optional citation for the R interface."
+)
+
+bibentry(
+  bibtype = "Misc",
+  title = "Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses",
+  author = person(given = "Vihaan", family = "Sahu"),
+  year = "2025",
+  note = "Version 2.1.1",
+  doi = "10.5281/zenodo.17236600"
+)
+
+bibentry(
+  bibtype = "Manual",
+  title = "critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'",
+  author = person(
+    given = "Vihaan",
+    family = "Sahu",
+    comment = c(ORCID = "0009-0008-5790-1818")
+  ),
+  year = "2026",
+  note = "R package version 0.2.0",
+  url = "https://github.com/aurumz-rgb/critiplotR"
+)

@@ -2,32 +2,38 @@
 % Please edit documentation in R/plot_robis.R
 \name{plot_robis}
 \alias{plot_robis}
-\title{Generate a ROBIS (Risk Of Bias In Systematic reviews) plot}
+\title{Generate a ROBIS risk-of-bias plot}
 \usage{
-plot_robis(input_file, output_file, theme = "default")
+plot_robis(input_file, output_file, theme = "default", verbose = FALSE)
 }
 \arguments{
-\item{input_file}{Path to input CSV or Excel file with ROBIS data.}
+\item{input_file}{A data frame with ROBIS data, or a path to a CSV or Excel
+file (\code{.csv}, \code{.xls}, \code{.xlsx}) containing it.}
 
-\item{output_file}{Path where the plot image will be saved (e.g., ".png").}
+\item{output_file}{Path where the plot will be saved. The file extension
+must be one of \code{"png"}, \code{"pdf"}, \code{"svg"}, or \code{"eps"}.}
 
-\item{theme}{Theme name. Options: "default", "blue", "gray", "smiley", "smiley_blue".
-Default is "default".}
+\item{theme}{Colour theme. One of \code{"default"}, \code{"blue"}, \code{"gray"},
+\code{"smiley"}, or \code{"smiley_blue"}.}
+
+\item{verbose}{If \code{TRUE}, relay the messages printed by the Python
+package to the R console.}
 }
 \value{
-Invisibly returns \code{output_file} on success.
+Invisibly returns the normalized path to the created file.
 }
 \description{
-Generate a ROBIS (Risk Of Bias In Systematic reviews) plot
+Creates a traffic-light plot and a stacked bar chart summarising ROBIS
+(Risk Of Bias In Systematic reviews) assessments.
 }
 \examples{
-\dontshow{if (reticulate::py_module_available("critiplot")) withAutoprint(\{ # examplesIf}
 \dontrun{
-  plot_robis(
-    input_file = system.file("extdata", "sample_robis.csv", package = "critiplotR"),
-    output_file = tempfile(fileext = ".png"),
-    theme = "smiley_blue"
-  )
+plot_robis(
+  input_file = system.file("extdata", "sample_robis.csv", package = "critiplotR"),
+  output_file = tempfile(fileext = ".png")
+)
 }
-\dontshow{\}) # examplesIf}
+}
+\seealso{
+\link{critiplotR} for the Python requirement and input data details.
 }
