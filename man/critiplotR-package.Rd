@@ -63,9 +63,9 @@ interface itself as well, use \code{citation("critiplotR")}.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/aurumz-rgb/critiplotR}
+  \item \url{https://github.com/critiplot/critiplotR}
   \item \url{https://pypi.org/project/critiplot/}
-  \item Report bugs at \url{https://github.com/aurumz-rgb/critiplotR/issues}
+  \item Report bugs at \url{https://github.com/critiplot/critiplotR/issues}
 }
 
 }
