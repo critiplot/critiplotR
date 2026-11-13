@@ -19,6 +19,8 @@ footer:
 
 home:
   links:
+  - text: Critiplot website
+    href: https://critiplot.github.io
   - text: Python critiplot package
     href: https://pypi.org/project/critiplot/
   - text: Main Critiplot repository

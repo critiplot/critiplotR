@@ -643,10 +643,31 @@ plot_nos(
   <figcaption><strong>MMAT</strong> — <code>plot_mmat()</code>. One plot is produced per value of <code>Study_Category</code>; this one shows the Randomized category.</figcaption>
 </figure>
 
-Try the <code>"smiley"</code> and <code>"smiley_blue"</code> themes on the
-traffic-light plots, or <code>"green"</code> and <code>"blue"</code> on
-<code>plot_grade()</code>, for a different look. See
-[Themes and output formats](#themes-and-output-formats) for the full list.
+### Theme variants
+
+The same data can be plotted with several colour themes. The NOS plot above
+uses the <code>"default"</code> theme; here are two alternatives:
+
+<figure>
+  <img src="man/figures/nos-smiley.png" width="700" alt="NOS traffic-light plot with the smiley theme" />
+  <figcaption><strong>NOS, <code>"smiley"</code> theme</strong> — <code>plot_nos(..., theme = "smiley")</code>. Judgements are drawn as smiley faces instead of coloured squares.</figcaption>
+</figure>
+
+<figure>
+  <img src="man/figures/nos-blue.png" width="700" alt="NOS traffic-light plot with the blue theme" />
+  <figcaption><strong>NOS, <code>"blue"</code> theme</strong> — <code>plot_nos(..., theme = "blue")</code>. An alternative colour palette for the traffic-light plot.</figcaption>
+</figure>
+
+<figure>
+  <img src="man/figures/grade-green.png" width="700" alt="GRADE evidence profile with the green theme" />
+  <figcaption><strong>GRADE, <code>"green"</code> theme</strong> — <code>plot_grade(..., theme = "green")</code>. One of the palettes exclusive to <code>plot_grade()</code>.</figcaption>
+</figure>
+
+The full theme list is <code>"default"</code>, <code>"blue"</code>,
+<code>"gray"</code>, <code>"smiley"</code>, and <code>"smiley_blue"</code> on
+the traffic-light plots, and <code>"default"</code>, <code>"green"</code>, and
+<code>"blue"</code> on <code>plot_grade()</code> — see
+[Themes and output formats](#themes-and-output-formats).
 
 ## Citation
 
@@ -680,6 +701,7 @@ citation. The package citation metadata is available at
 
 ## Related links
 
+* Critiplot website: <https://critiplot.github.io>
 * Python package: <https://pypi.org/project/critiplot/>
 * Main Critiplot repository: <https://github.com/aurumz-rgb/Critiplot-main>
 * R package repository: <https://github.com/aurumz-rgb/critiplotR>
