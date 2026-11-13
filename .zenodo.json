@@ -1,6 +1,6 @@
 {
-  "title": "critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'",
-  "description": "<p><strong>critiplotR</strong> is an R interface to the Python package <a href=\"https://pypi.org/project/critiplot/\">critiplot</a>. It creates publication-ready traffic-light plots and stacked bar charts for risk-of-bias assessments in systematic reviews and meta-analyses, supporting the Newcastle-Ottawa Scale (NOS), the JBI critical appraisal checklists for case reports and case series, GRADE certainty of evidence, ROBIS, and the Mixed Methods Appraisal Tool (MMAT).</p><p>Plots are produced by critiplot through the reticulate package. Documentation is available at <a href=\"https://critiplot.github.io/critiplotR/\">https://critiplot.github.io/critiplotR/</a>.</p>",
+  "title": "critiplotR: Visualize Risk-of-Bias and Certainty of Evidence Assessments with 'critiplot'",
+  "description": "<p><strong>critiplotR</strong> is an R interface to the Python package <a href=\"https://pypi.org/project/critiplot/\">critiplot</a>. It creates publication-ready traffic-light plots and stacked bar charts for risk-of-bias and certainty-of-evidence assessments in systematic reviews and meta-analyses, supporting the Newcastle-Ottawa Scale (NOS), the JBI critical appraisal checklists for case reports and case series, GRADE certainty of evidence, ROBIS, and the Mixed Methods Appraisal Tool (MMAT).</p><p>Plots are produced by critiplot through the reticulate package. Documentation is available at <a href=\"https://critiplot.github.io/critiplotR/\">https://critiplot.github.io/critiplotR/</a>.</p>",
   "creators": [
     {
       "name": "Sahu, Vihaan",

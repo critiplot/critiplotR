@@ -1,9 +1,10 @@
-#' critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'
+#' critiplotR: Visualize Risk-of-Bias and Certainty of Evidence Assessments with 'critiplot'
 #'
 #' `critiplotR` is an R interface to the Python package
 #' [`critiplot`](https://critiplot.github.io). It creates
 #' publication-ready traffic-light plots and stacked bar charts for
-#' risk-of-bias assessments in systematic reviews and meta-analyses.
+#' risk-of-bias and certainty-of-evidence assessments in systematic reviews
+#' and meta-analyses.
 #'
 #' \if{html}{\figure{logo.png}{options: width=180 alt="critiplotR logo"}}
 #'

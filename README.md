@@ -7,9 +7,9 @@
 [![critiplotR DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24208481.svg)](https://doi.org/10.5281/zenodo.24208481)
 <!-- badges: end -->
 
-**critiplotR** is an R interface to [**critiplot**](https://critiplot.github.io), an open-source tool for visualizing **risk-of-bias (RoB) assessments** in systematic reviews and meta-analyses. It produces **publication-ready traffic-light plots** and **stacked bar charts** for:
+**critiplotR** is an R interface to [**critiplot**](https://critiplot.github.io), an open-source tool for visualizing **risk-of-bias (RoB) and certainty of evidence assessments** in systematic reviews and meta-analyses. It produces **publication-ready traffic-light plots** and **stacked bar charts** for:
 
-| Function | Assessment |
+| Function | Framework |
 |---|---|
 | `plot_nos()` | Newcastle-Ottawa Scale (NOS) |
 | `plot_jbi_case_report()` | JBI critical appraisal checklist for case reports |
@@ -692,13 +692,14 @@ software:
 
 If you want to cite the R interface itself as well:
 
-> Sahu, V. (2026). *critiplotR: Visualize Risk-of-Bias Assessments with
-> 'critiplot'* (v0.2.0). Zenodo. <https://doi.org/10.5281/zenodo.24208481>
+> Sahu, V. (2026). *critiplotR: Visualize Risk-of-Bias and Certainty of
+> Evidence Assessments with 'critiplot'* (v0.2.0). Zenodo.
+> <https://doi.org/10.5281/zenodo.24208481>
 
 ```bibtex
 @software{sahu2026critiplotr,
   author = {Sahu, Vihaan},
-  title = {critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'},
+  title = {critiplotR: Visualize Risk-of-Bias and Certainty of Evidence Assessments with 'critiplot'},
   year = {2026},
   version = {0.2.0},
   doi = {10.5281/zenodo.24208481},

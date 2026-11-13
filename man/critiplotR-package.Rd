@@ -4,12 +4,13 @@
 \name{critiplotR-package}
 \alias{critiplotR}
 \alias{critiplotR-package}
-\title{critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'}
+\title{critiplotR: Visualize Risk-of-Bias and Certainty of Evidence Assessments with 'critiplot'}
 \description{
 \code{critiplotR} is an R interface to the Python package
 \href{https://critiplot.github.io}{\code{critiplot}}. It creates
 publication-ready traffic-light plots and stacked bar charts for
-risk-of-bias assessments in systematic reviews and meta-analyses.
+risk-of-bias and certainty-of-evidence assessments in systematic reviews
+and meta-analyses.
 }
 \details{
 \if{html}{\figure{logo.png}{options: width=180 alt="critiplotR logo"}}

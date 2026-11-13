@@ -14,7 +14,7 @@ bibentry(
 
 bibentry(
   bibtype = "Manual",
-  title = "critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'",
+  title = "critiplotR: Visualize Risk-of-Bias and Certainty of Evidence Assessments with 'critiplot'",
   author = person(
     given = "Vihaan",
     family = "Sahu",

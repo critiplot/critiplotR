@@ -1,6 +1,6 @@
 Package: critiplotR
 Type: Package
-Title: Visualize Risk-of-Bias Assessments with 'critiplot'
+Title: Visualize Risk-of-Bias and Certainty of Evidence Assessments with 'critiplot'
 Version: 0.2.0
 Authors@R:
     person(
@@ -11,14 +11,14 @@ Authors@R:
         comment = c(ORCID = "0009-0008-5790-1818")
     )
 Description: Creates publication-ready traffic-light plots and stacked bar
-    charts for risk-of-bias assessments in systematic reviews and
-    meta-analyses. Provides an R interface to the Python package 'critiplot'
-    (version 2.1.1 or later) and supports the Newcastle-Ottawa Scale (NOS),
-    the Joanna Briggs Institute ('JBI') critical appraisal checklists for
-    case reports and case series, the GRADE certainty-of-evidence framework,
-    the 'ROBIS' framework for systematic reviews, and the Mixed Methods
-    Appraisal Tool ('MMAT'). Plots are produced by 'critiplot' through the
-    'reticulate' package.
+    charts for risk-of-bias and certainty-of-evidence assessments in
+    systematic reviews and meta-analyses. Provides an R interface to the
+    Python package 'critiplot' (version 2.1.1 or later) and supports the
+    Newcastle-Ottawa Scale (NOS), the Joanna Briggs Institute ('JBI')
+    critical appraisal checklists for case reports and case series, the
+    GRADE certainty-of-evidence framework, the 'ROBIS' framework for
+    systematic reviews, and the Mixed Methods Appraisal Tool ('MMAT').
+    Plots are produced by 'critiplot' through the 'reticulate' package.
 License: Apache License 2.0
 Language: en-GB
 Encoding: UTF-8

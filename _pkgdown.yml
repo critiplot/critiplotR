@@ -31,9 +31,9 @@ reference:
   desc: >
     Each function reads a data frame or a `.csv`/`.xls`/`.xlsx` file and
     writes a publication-ready traffic-light plot or stacked bar chart
-    for one critical-appraisal framework. All functions share the same
-    interface and return the path(s) of the file(s) they created,
-    invisibly.
+    for one risk-of-bias or certainty-of-evidence framework. All functions
+    share the same interface and return the path(s) of the file(s) they
+    created, invisibly.
 - subtitle: Observational studies
   contents:
   - plot_nos

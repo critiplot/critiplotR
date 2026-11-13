@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use critiplotR, please cite the original Critiplot software (see references). The preferred citation below is for the R interface."
-title: "critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'"
+title: "critiplotR: Visualize Risk-of-Bias and Certainty of Evidence Assessments with 'critiplot'"
 version: "0.2.0"
 date-released: 2026-11-13
 doi: "10.5281/zenodo.24208481"
@@ -14,7 +14,7 @@ preferred-citation:
     - family-names: "Sahu"
       given-names: "Vihaan"
       orcid: "https://orcid.org/0009-0008-5790-1818"
-  title: "critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'"
+  title: "critiplotR: Visualize Risk-of-Bias and Certainty of Evidence Assessments with 'critiplot'"
   version: "0.2.0"
   year: 2026
   doi: "10.5281/zenodo.24208481"
