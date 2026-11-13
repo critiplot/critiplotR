@@ -12,6 +12,8 @@ publication-ready traffic-light plots and stacked bar charts for
 risk-of-bias assessments in systematic reviews and meta-analyses.
 }
 \details{
+\if{html}{\figure{logo.png}{options: width=180 alt="critiplotR logo"}}
+
 The package supports:
 \itemize{
 \item the Newcastle-Ottawa Scale (NOS), via \code{\link[=plot_nos]{plot_nos()}};

@@ -1,5 +1,7 @@
 # critiplotR
 
+<img src="man/figures/logo.png" align="right" width="180" alt="critiplotR logo" />
+
 <!-- badges: start -->
 [![Critiplot DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17236600.svg)](https://doi.org/10.5281/zenodo.17236600)
 <!-- badges: end -->
@@ -14,8 +16,6 @@
 | `plot_grade()` | GRADE certainty of evidence |
 | `plot_robis()` | ROBIS (Risk Of Bias In Systematic reviews) |
 | `plot_mmat()` | Mixed Methods Appraisal Tool (MMAT) |
-
-![Example critiplotR output](man/figures/screenshot.png)
 
 ---
 
