@@ -32,8 +32,9 @@
 9. [Using plots in R Markdown and Quarto](#using-plots-in-r-markdown-and-quarto)
 10. [Bundled example data](#bundled-example-data)
 11. [Troubleshooting](#troubleshooting)
-12. [Citation](#citation)
-13. [Related links](#related-links)
+12. [Example gallery](#example-gallery)
+13. [Citation](#citation)
+14. [Related links](#related-links)
 
 ---
 
@@ -589,6 +590,63 @@ sessionInfo()
 reticulate::py_config()
 reticulate::py_module_available("critiplot")
 ```
+
+## Example gallery
+
+The plots below were generated from the bundled example data
+(`inst/extdata/`) with the default theme, using this one-liner pattern:
+
+```r
+plot_nos(
+  system.file("extdata", "sample_nos.csv", package = "critiplotR"),
+  "nos.png"
+)
+```
+
+### Newcastle-Ottawa Scale
+
+<figure>
+  <img src="man/figures/nos.png" width="700" alt="Traffic-light plot and stacked bar chart of Newcastle-Ottawa Scale risk-of-bias judgments" />
+  <figcaption><strong>NOS traffic-light plot</strong> — <code>plot_nos()</code>. One row per study, one column per domain, plus a stacked bar chart of the judgements.</figcaption>
+</figure>
+
+### JBI checklists
+
+<figure>
+  <img src="man/figures/jbi-case-report.png" width="520" alt="JBI critical appraisal checklist for case reports, traffic-light plot" />
+  <figcaption><strong>JBI case report</strong> — <code>plot_jbi_case_report()</code>. Each study is judged on the eight JBI case-report domains.</figcaption>
+</figure>
+
+<figure>
+  <img src="man/figures/jbi-case-series.png" width="520" alt="JBI critical appraisal checklist for case series, traffic-light plot" />
+  <figcaption><strong>JBI case series</strong> — <code>plot_jbi_case_series()</code>. Each study is judged on the ten JBI case-series domains.</figcaption>
+</figure>
+
+### GRADE
+
+<figure>
+  <img src="man/figures/grade.png" width="700" alt="GRADE evidence profile with domain judgements and overall certainty" />
+  <figcaption><strong>GRADE evidence profile</strong> — <code>plot_grade()</code>. Domain judgements downweight the overall certainty of each outcome.</figcaption>
+</figure>
+
+### ROBIS
+
+<figure>
+  <img src="man/figures/robis.png" width="720" alt="ROBIS traffic-light plot for systematic reviews" />
+  <figcaption><strong>ROBIS</strong> — <code>plot_robis()</code>. One row per review, one column per phase, plus the overall risk of bias.</figcaption>
+</figure>
+
+### MMAT
+
+<figure>
+  <img src="man/figures/mmat.png" width="620" alt="MMAT traffic-light plot for mixed methods appraisal" />
+  <figcaption><strong>MMAT</strong> — <code>plot_mmat()</code>. One plot is produced per value of <code>Study_Category</code>; this one shows the Randomized category.</figcaption>
+</figure>
+
+Try the <code>"smiley"</code> and <code>"smiley_blue"</code> themes on the
+traffic-light plots, or <code>"green"</code> and <code>"blue"</code> on
+<code>plot_grade()</code>, for a different look. See
+[Themes and output formats](#themes-and-output-formats) for the full list.
 
 ## Citation
 

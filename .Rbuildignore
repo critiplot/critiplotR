@@ -4,3 +4,6 @@
 ^critiplotR_[0-9.]+\.tar\.gz$
 ^cran-comments\.md$
 ^\.github$
+^figures-gallery\.R$
+^_pkgdown\.yml$
+^docs$
