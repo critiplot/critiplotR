@@ -8,11 +8,12 @@ Local (`--as-cran`, macOS, R 4.5.1): 0 errors, 0 warnings, 2 notes.
 
 ## Windows and Linux
 
-Submitted to win-builder for R-devel and R-release. The R-release check
-(Windows Server 2022, R 4.6.2) reports 0 errors, 0 warnings, and one NOTE:
-the standard "New submission" note. The package is pure R, so no compilation
-is involved. The only platform-specific requirement is Python (>= 3.9) with
-`critiplot`, which is declared under `SystemRequirements`.
+Submitted to win-builder for R-devel and R-release. The final check on
+R-release 4.6.2 (Windows Server 2022) reports 0 errors, 0 warnings, and one
+NOTE: the standard "New submission" note. Changes after that check were
+documentation-only. The package is pure R, so no compilation is involved.
+The only platform-specific requirement is Python (>= 3.9) with `critiplot`,
+which is declared under `SystemRequirements`.
 
 Checked in the R-hub `ubuntu-release` container (Ubuntu 26.04, R 4.6.2):
 0 errors, 0 warnings. The container does not provide pandoc or curl, so the

@@ -7,7 +7,7 @@
 [![critiplotR DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24208481.svg)](https://doi.org/10.5281/zenodo.24208481)
 <!-- badges: end -->
 
-**critiplotR** is an R interface to [**critiplot**](https://pypi.org/project/critiplot/), an open-source tool for visualizing **risk-of-bias (RoB) assessments** in systematic reviews and meta-analyses. It produces **publication-ready traffic-light plots** and **stacked bar charts** for:
+**critiplotR** is an R interface to [**critiplot**](https://critiplot.github.io), an open-source tool for visualizing **risk-of-bias (RoB) assessments** in systematic reviews and meta-analyses. It produces **publication-ready traffic-light plots** and **stacked bar charts** for:
 
 | Function | Assessment |
 |---|---|
