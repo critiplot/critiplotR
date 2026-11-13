@@ -32,7 +32,7 @@ Suggests:
     readxl,
     testthat (>= 3.1.10)
 SystemRequirements: Python (>= 3.9)
-URL: https://github.com/aurumz-rgb/critiplotR,
+URL: https://github.com/critiplot/critiplotR,
     https://pypi.org/project/critiplot/
-BugReports: https://github.com/aurumz-rgb/critiplotR/issues
+BugReports: https://github.com/critiplot/critiplotR/issues
 RoxygenNote: 7.3.3

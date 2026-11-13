@@ -16,7 +16,7 @@ preferred-citation:
   title: "critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'"
   version: "0.2.0"
   year: 2026
-  url: "https://github.com/aurumz-rgb/critiplotR"
+  url: "https://github.com/critiplot/critiplotR"
 references:
   - type: software
     authors:

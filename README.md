@@ -50,11 +50,11 @@ install.packages("critiplotR")
 
 ```r
 # install.packages("pak")
-pak::pak("aurumz-rgb/critiplotR")
+pak::pak("critiplot/critiplotR")
 
 # or
 # install.packages("remotes")
-remotes::install_github("aurumz-rgb/critiplotR")
+remotes::install_github("critiplot/critiplotR")
 ```
 
 ### From a source tarball
@@ -582,7 +582,7 @@ library(critiplotR)
 
 ### Still stuck?
 
-Open an issue at <https://github.com/aurumz-rgb/critiplotR/issues> and include
+Open an issue at <https://github.com/critiplot/critiplotR/issues> and include
 the output of:
 
 ```r
@@ -697,16 +697,16 @@ citation("critiplotR")
 
 This returns the original Critiplot citation and the optional `critiplotR`
 citation. The package citation metadata is available at
-<https://github.com/aurumz-rgb/critiplotR/blob/main/CITATION.cff>.
+<https://github.com/critiplot/critiplotR/blob/main/CITATION.cff>.
 
 ## Related links
 
 * Critiplot website: <https://critiplot.github.io>
 * Python package: <https://pypi.org/project/critiplot/>
 * Main Critiplot repository: <https://github.com/aurumz-rgb/Critiplot-main>
-* R package repository: <https://github.com/aurumz-rgb/critiplotR>
+* R package repository: <https://github.com/critiplot/critiplotR>
 * reticulate documentation: <https://rstudio.github.io/reticulate/>
 
 ## License
 
-Apache License 2.0: <https://github.com/aurumz-rgb/critiplotR/blob/main/LICENSE.md>.
+Apache License 2.0: <https://github.com/critiplot/critiplotR/blob/main/LICENSE.md>.

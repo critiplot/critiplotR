@@ -22,5 +22,5 @@ bibentry(
   ),
   year = "2026",
   note = "R package version 0.2.0",
-  url = "https://github.com/aurumz-rgb/critiplotR"
+  url = "https://github.com/critiplot/critiplotR"
 )
