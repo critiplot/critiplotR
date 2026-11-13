@@ -4,6 +4,7 @@
 
 <!-- badges: start -->
 [![Critiplot DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17236600.svg)](https://doi.org/10.5281/zenodo.17236600)
+[![critiplotR DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24208481.svg)](https://doi.org/10.5281/zenodo.24208481)
 <!-- badges: end -->
 
 **critiplotR** is an R interface to [**critiplot**](https://pypi.org/project/critiplot/), an open-source tool for visualizing **risk-of-bias (RoB) assessments** in systematic reviews and meta-analyses. It produces **publication-ready traffic-light plots** and **stacked bar charts** for:
@@ -689,14 +690,24 @@ software:
 }
 ```
 
-If you want to cite the R interface itself as well, use:
+If you want to cite the R interface itself as well:
 
-```r
-citation("critiplotR")
+> Sahu, V. (2026). *critiplotR: Visualize Risk-of-Bias Assessments with
+> 'critiplot'* (v0.2.0). Zenodo. <https://doi.org/10.5281/zenodo.24208481>
+
+```bibtex
+@software{sahu2026critiplotr,
+  author = {Sahu, Vihaan},
+  title = {critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'},
+  year = {2026},
+  version = {0.2.0},
+  doi = {10.5281/zenodo.24208481},
+  url = {https://doi.org/10.5281/zenodo.24208481}
+}
 ```
 
-This returns the original Critiplot citation and the optional `critiplotR`
-citation. The package citation metadata is available at
+`citation("critiplotR")` returns both citations, and the package citation
+metadata is available at
 <https://github.com/critiplot/critiplotR/blob/main/CITATION.cff>.
 
 ## Related links

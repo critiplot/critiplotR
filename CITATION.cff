@@ -3,6 +3,7 @@ message: "If you use critiplotR, please cite the original Critiplot software (se
 title: "critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'"
 version: "0.2.0"
 date-released: 2026-11-13
+doi: "10.5281/zenodo.24208481"
 authors:
   - family-names: "Sahu"
     given-names: "Vihaan"
@@ -16,7 +17,8 @@ preferred-citation:
   title: "critiplotR: Visualize Risk-of-Bias Assessments with 'critiplot'"
   version: "0.2.0"
   year: 2026
-  url: "https://github.com/critiplot/critiplotR"
+  doi: "10.5281/zenodo.24208481"
+  url: "https://doi.org/10.5281/zenodo.24208481"
 references:
   - type: software
     authors:
