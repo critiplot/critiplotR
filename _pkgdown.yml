@@ -5,6 +5,34 @@ template:
   bootswatch: flatly
   params:
     bootswatch: flatly
+  includes:
+    in_header: |
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "critiplotR",
+        "alternateName": "critiplot R package",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Cross-platform",
+        "softwareVersion": "0.2.0",
+        "programmingLanguage": "R",
+        "description": "Open-source R package for visualizing risk-of-bias and certainty of evidence assessments in systematic reviews and meta-analyses. The official R interface to the Python package critiplot, producing publication-ready traffic-light plots and stacked bar charts for NOS, JBI checklists, GRADE, ROBIS, and MMAT.",
+        "url": "https://critiplot.github.io/critiplotR/",
+        "keywords": "risk of bias, certainty of evidence, systematic reviews, meta-analysis, Newcastle-Ottawa Scale, NOS, JBI, GRADE, ROBIS, MMAT, traffic-light plot, R package, CRAN",
+        "author": {
+          "@type": "Person",
+          "name": "Vihaan Sahu",
+          "url": "https://github.com/aurumz-rgb"
+        },
+        "license": "https://opensource.org/licenses/Apache-2.0",
+        "sameAs": [
+          "https://github.com/critiplot/critiplotR",
+          "https://cran.r-project.org/package=critiplotR",
+          "https://doi.org/10.5281/zenodo.24208481"
+        ]
+      }
+      </script>
 
 footer:
   structure:
@@ -18,6 +46,8 @@ footer:
       <a href="https://critiplot.github.io">critiplot</a>.
 
 home:
+  title: "critiplotR: R package for risk-of-bias and certainty of evidence plots"
+  description: "critiplotR is an open-source R package (the official R interface to critiplot) for publication-ready traffic-light plots and stacked bar charts of risk-of-bias and certainty-of-evidence assessments: NOS, JBI checklists, GRADE, ROBIS, and MMAT."
   links:
   - text: Critiplot website
     href: https://critiplot.github.io

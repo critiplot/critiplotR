@@ -7,7 +7,7 @@
 [![critiplotR DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24208481.svg)](https://doi.org/10.5281/zenodo.24208481)
 <!-- badges: end -->
 
-**critiplotR** is an R interface to [**critiplot**](https://critiplot.github.io), an open-source tool for visualizing **risk-of-bias (RoB) and certainty of evidence assessments** in systematic reviews and meta-analyses. It produces **publication-ready traffic-light plots** and **stacked bar charts** for:
+**critiplotR** is an open-source **R package** for visualizing **risk-of-bias (RoB) and certainty of evidence assessments** in systematic reviews and meta-analyses — the official R interface to [**critiplot**](https://critiplot.github.io). It produces **publication-ready traffic-light plots** and **stacked bar charts** for:
 
 | Function | Framework |
 |---|---|
@@ -25,17 +25,18 @@
 1. [Installation](#installation)
 2. [Python setup](#python-setup)
 3. [Quick start](#quick-start)
-4. [How to use critiplotR in R](#how-to-use-critiplotr-in-r)
-5. [Input data reference](#input-data-reference)
-6. [Themes and output formats](#themes-and-output-formats)
-7. [Return values](#return-values)
-8. [Seeing the Python messages](#seeing-the-python-messages)
-9. [Using plots in R Markdown and Quarto](#using-plots-in-r-markdown-and-quarto)
-10. [Bundled example data](#bundled-example-data)
-11. [Troubleshooting](#troubleshooting)
-12. [Example gallery](#example-gallery)
-13. [Citation](#citation)
-14. [Related links](#related-links)
+4. [See it in action](#see-it-in-action)
+5. [How to use critiplotR in R](#how-to-use-critiplotr-in-r)
+6. [Input data reference](#input-data-reference)
+7. [Themes and output formats](#themes-and-output-formats)
+8. [Return values](#return-values)
+9. [Seeing the Python messages](#seeing-the-python-messages)
+10. [Using plots in R Markdown and Quarto](#using-plots-in-r-markdown-and-quarto)
+11. [Bundled example data](#bundled-example-data)
+12. [Troubleshooting](#troubleshooting)
+13. [Example gallery](#example-gallery)
+14. [Citation](#citation)
+15. [Related links](#related-links)
 
 ---
 
@@ -158,6 +159,42 @@ Open `nos.png` with any image viewer, or inside R:
 ```r
 utils::browseURL(out)
 ```
+
+## See it in action
+
+Each plot below was created by a live R session from the bundled example
+data. The console shows the exact calls; the figure underneath is the file
+the function returned.
+
+<figure>
+  <img src="https://critiplot.github.io/critiplotR/screenshots/demo-nos.png" width="800" alt="R console running plot_nos() from the critiplotR R package, producing a Newcastle-Ottawa Scale traffic-light plot and stacked bar chart" />
+  <figcaption><strong>NOS</strong> — <code>plot_nos()</code>: traffic-light plot and stacked bar chart of Newcastle-Ottawa Scale judgements.</figcaption>
+</figure>
+
+<figure>
+  <img src="https://critiplot.github.io/critiplotR/screenshots/demo-jbi-case-report.png" width="800" alt="R console running plot_jbi_case_report() from the critiplotR R package, producing a JBI case report critical appraisal traffic-light plot" />
+  <figcaption><strong>JBI case report</strong> — <code>plot_jbi_case_report()</code>.</figcaption>
+</figure>
+
+<figure>
+  <img src="https://critiplot.github.io/critiplotR/screenshots/demo-jbi-case-series.png" width="800" alt="R console running plot_jbi_case_series() from the critiplotR R package, producing a JBI case series critical appraisal traffic-light plot" />
+  <figcaption><strong>JBI case series</strong> — <code>plot_jbi_case_series()</code>.</figcaption>
+</figure>
+
+<figure>
+  <img src="https://critiplot.github.io/critiplotR/screenshots/demo-grade.png" width="800" alt="R console running plot_grade() from the critiplotR R package, producing a GRADE certainty of evidence profile" />
+  <figcaption><strong>GRADE</strong> — <code>plot_grade()</code>.</figcaption>
+</figure>
+
+<figure>
+  <img src="https://critiplot.github.io/critiplotR/screenshots/demo-robis.png" width="800" alt="R console running plot_robis() from the critiplotR R package, producing a ROBIS traffic-light plot for systematic reviews" />
+  <figcaption><strong>ROBIS</strong> — <code>plot_robis()</code>.</figcaption>
+</figure>
+
+<figure>
+  <img src="https://critiplot.github.io/critiplotR/screenshots/demo-mmat.png" width="800" alt="R console running plot_mmat() from the critiplotR R package, producing one MMAT traffic-light plot per study category" />
+  <figcaption><strong>MMAT</strong> — <code>plot_mmat()</code>: one plot per study category.</figcaption>
+</figure>
 
 ## How to use critiplotR in R
 
