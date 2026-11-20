@@ -44,11 +44,7 @@
 
 ### From CRAN
 
-```r
-install.packages("critiplotR")
-```
-
-### Development version from GitHub
+A CRAN release is pending. Until it is accepted, install from GitHub:
 
 ```r
 # install.packages("pak")
@@ -721,15 +717,15 @@ the traffic-light plots, and <code>"default"</code>, <code>"green"</code>, and
 If you use the plots in a publication, please cite the original Critiplot
 software:
 
-> Sahu, V. (2025). *Critiplot: A Critical Appraisal Plot Visualiser for Risk
+> Sahu, V. (2026). *Critiplot: A Critical Appraisal Plot Visualiser for Risk
 > of Bias in Systematic Reviews and Meta-Analyses* (v2.1.1). Zenodo.
 > <https://doi.org/10.5281/zenodo.17236600>
 
 ```bibtex
-@misc{sahu2025critiplot,
+@misc{sahu2026critiplot,
   author = {Sahu, Vihaan},
   title = {Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses},
-  year = {2025},
+  year = {2026},
   note = {Version 2.1.1},
   doi = {10.5281/zenodo.17236600},
   url = {https://doi.org/10.5281/zenodo.17236600}
