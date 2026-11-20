@@ -43,7 +43,9 @@ footer:
       critiplotR is developed by
       <a href="https://github.com/aurumz-rgb">Vihaan Sahu</a>.
       Plots are produced by the Python package
-      <a href="https://critiplot.github.io">critiplot</a>.
+      <a href="https://critiplot.github.io">critiplot</a>
+      (<a href="https://pypi.org/project/critiplot/">PyPI</a>,
+      <a href="https://anaconda.org/conda-forge/critiplot">conda-forge</a>).
 
 home:
   title: "critiplotR: R package for risk-of-bias and certainty of evidence plots"
@@ -53,6 +55,8 @@ home:
     href: https://critiplot.github.io
   - text: Python critiplot package
     href: https://pypi.org/project/critiplot/
+  - text: conda-forge package
+    href: https://anaconda.org/conda-forge/critiplot
   - text: Main Critiplot repository
     href: https://github.com/aurumz-rgb/Critiplot-main
 

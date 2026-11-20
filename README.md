@@ -74,10 +74,11 @@ Python yourself, install it into the interpreter that reticulate uses:
 reticulate::py_install("critiplot", pip = TRUE)
 ```
 
-or from a terminal:
+or from a terminal, with pip or conda-forge:
 
 ```bash
 pip install "critiplot>=2.1.1"
+conda install conda-forge::critiplot
 ```
 
 ## Python setup
@@ -113,6 +114,14 @@ reticulate::use_condaenv("critiplot-env", required = TRUE)
 
 Call `use_virtualenv()` / `use_condaenv()` **before** the first plot call in
 the session.
+
+`critiplot` is published on
+[conda-forge](https://anaconda.org/conda-forge/critiplot), so you can also
+install the backend into any conda environment with:
+
+```bash
+conda install conda-forge::critiplot
+```
 
 ### Option 3: Use a specific system Python
 
@@ -752,6 +761,7 @@ metadata is available at
 
 * Critiplot website: <https://critiplot.github.io>
 * Python package: <https://pypi.org/project/critiplot/>
+* conda-forge package: <https://anaconda.org/conda-forge/critiplot>
 * Main Critiplot repository: <https://github.com/aurumz-rgb/Critiplot-main>
 * R package repository: <https://github.com/critiplot/critiplotR>
 * reticulate documentation: <https://rstudio.github.io/reticulate/>
