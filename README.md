@@ -7,7 +7,7 @@
 [![critiplotR DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24208481.svg)](https://doi.org/10.5281/zenodo.24208481)
 <!-- badges: end -->
 
-**critiplotR** is an open-source **R package** for visualizing **risk-of-bias (RoB) and certainty of evidence assessments** in systematic reviews and meta-analyses — the official R interface to [**critiplot**](https://critiplot.github.io). It produces **publication-ready traffic-light plots** and **stacked bar charts** for:
+**critiplotR** is an open-source **R package** for visualizing **risk-of-bias (RoB) and certainty of evidence assessments** in systematic reviews and meta-analyses, and is the official R interface to [**critiplot**](https://critiplot.github.io). It produces **publication-ready traffic-light plots** and **stacked bar charts** for:
 
 | Function | Framework |
 |---|---|
@@ -177,32 +177,32 @@ the function returned.
 
 <figure>
   <img src="https://critiplot.github.io/critiplotR/screenshots/demo-nos.png" width="800" alt="R console running plot_nos() from the critiplotR R package, producing a Newcastle-Ottawa Scale traffic-light plot and stacked bar chart" />
-  <figcaption><strong>NOS</strong> — <code>plot_nos()</code>: traffic-light plot and stacked bar chart of Newcastle-Ottawa Scale judgements.</figcaption>
+  <figcaption><strong>NOS</strong> (<code>plot_nos()</code>): traffic-light plot and stacked bar chart of Newcastle-Ottawa Scale judgements.</figcaption>
 </figure>
 
 <figure>
   <img src="https://critiplot.github.io/critiplotR/screenshots/demo-jbi-case-report.png" width="800" alt="R console running plot_jbi_case_report() from the critiplotR R package, producing a JBI case report critical appraisal traffic-light plot" />
-  <figcaption><strong>JBI case report</strong> — <code>plot_jbi_case_report()</code>.</figcaption>
+  <figcaption><strong>JBI case report</strong>: <code>plot_jbi_case_report()</code>.</figcaption>
 </figure>
 
 <figure>
   <img src="https://critiplot.github.io/critiplotR/screenshots/demo-jbi-case-series.png" width="800" alt="R console running plot_jbi_case_series() from the critiplotR R package, producing a JBI case series critical appraisal traffic-light plot" />
-  <figcaption><strong>JBI case series</strong> — <code>plot_jbi_case_series()</code>.</figcaption>
+  <figcaption><strong>JBI case series</strong>: <code>plot_jbi_case_series()</code>.</figcaption>
 </figure>
 
 <figure>
   <img src="https://critiplot.github.io/critiplotR/screenshots/demo-grade.png" width="800" alt="R console running plot_grade() from the critiplotR R package, producing a GRADE certainty of evidence profile" />
-  <figcaption><strong>GRADE</strong> — <code>plot_grade()</code>.</figcaption>
+  <figcaption><strong>GRADE</strong>: <code>plot_grade()</code>.</figcaption>
 </figure>
 
 <figure>
   <img src="https://critiplot.github.io/critiplotR/screenshots/demo-robis.png" width="800" alt="R console running plot_robis() from the critiplotR R package, producing a ROBIS traffic-light plot for systematic reviews" />
-  <figcaption><strong>ROBIS</strong> — <code>plot_robis()</code>.</figcaption>
+  <figcaption><strong>ROBIS</strong>: <code>plot_robis()</code>.</figcaption>
 </figure>
 
 <figure>
   <img src="https://critiplot.github.io/critiplotR/screenshots/demo-mmat.png" width="800" alt="R console running plot_mmat() from the critiplotR R package, producing one MMAT traffic-light plot per study category" />
-  <figcaption><strong>MMAT</strong> — <code>plot_mmat()</code>: one plot per study category.</figcaption>
+  <figcaption><strong>MMAT</strong> (<code>plot_mmat()</code>): one plot per study category.</figcaption>
 </figure>
 
 ## How to use critiplotR in R
@@ -654,40 +654,40 @@ plot_nos(
 
 <figure>
   <img src="man/figures/nos.png" width="700" alt="Traffic-light plot and stacked bar chart of Newcastle-Ottawa Scale risk-of-bias judgments" />
-  <figcaption><strong>NOS traffic-light plot</strong> — <code>plot_nos()</code>. One row per study, one column per domain, plus a stacked bar chart of the judgements.</figcaption>
+  <figcaption><strong>NOS traffic-light plot</strong>: <code>plot_nos()</code>. One row per study, one column per domain, plus a stacked bar chart of the judgements.</figcaption>
 </figure>
 
 ### JBI checklists
 
 <figure>
   <img src="man/figures/jbi-case-report.png" width="520" alt="JBI critical appraisal checklist for case reports, traffic-light plot" />
-  <figcaption><strong>JBI case report</strong> — <code>plot_jbi_case_report()</code>. Each study is judged on the eight JBI case-report domains.</figcaption>
+  <figcaption><strong>JBI case report</strong>: <code>plot_jbi_case_report()</code>. Each study is judged on the eight JBI case-report domains.</figcaption>
 </figure>
 
 <figure>
   <img src="man/figures/jbi-case-series.png" width="520" alt="JBI critical appraisal checklist for case series, traffic-light plot" />
-  <figcaption><strong>JBI case series</strong> — <code>plot_jbi_case_series()</code>. Each study is judged on the ten JBI case-series domains.</figcaption>
+  <figcaption><strong>JBI case series</strong>: <code>plot_jbi_case_series()</code>. Each study is judged on the ten JBI case-series domains.</figcaption>
 </figure>
 
 ### GRADE
 
 <figure>
   <img src="man/figures/grade.png" width="700" alt="GRADE evidence profile with domain judgements and overall certainty" />
-  <figcaption><strong>GRADE evidence profile</strong> — <code>plot_grade()</code>. Domain judgements downweight the overall certainty of each outcome.</figcaption>
+  <figcaption><strong>GRADE evidence profile</strong>: <code>plot_grade()</code>. Domain judgements downweight the overall certainty of each outcome.</figcaption>
 </figure>
 
 ### ROBIS
 
 <figure>
   <img src="man/figures/robis.png" width="720" alt="ROBIS traffic-light plot for systematic reviews" />
-  <figcaption><strong>ROBIS</strong> — <code>plot_robis()</code>. One row per review, one column per phase, plus the overall risk of bias.</figcaption>
+  <figcaption><strong>ROBIS</strong>: <code>plot_robis()</code>. One row per review, one column per phase, plus the overall risk of bias.</figcaption>
 </figure>
 
 ### MMAT
 
 <figure>
   <img src="man/figures/mmat.png" width="620" alt="MMAT traffic-light plot for mixed methods appraisal" />
-  <figcaption><strong>MMAT</strong> — <code>plot_mmat()</code>. One plot is produced per value of <code>Study_Category</code>; this one shows the Randomized category.</figcaption>
+  <figcaption><strong>MMAT</strong>: <code>plot_mmat()</code>. One plot is produced per value of <code>Study_Category</code>; this one shows the Randomized category.</figcaption>
 </figure>
 
 ### Theme variants
@@ -697,23 +697,23 @@ uses the <code>"default"</code> theme; here are two alternatives:
 
 <figure>
   <img src="man/figures/nos-smiley.png" width="700" alt="NOS traffic-light plot with the smiley theme" />
-  <figcaption><strong>NOS, <code>"smiley"</code> theme</strong> — <code>plot_nos(..., theme = "smiley")</code>. Judgements are drawn as smiley faces instead of coloured squares.</figcaption>
+  <figcaption><strong>NOS, <code>"smiley"</code> theme</strong>: <code>plot_nos(..., theme = "smiley")</code>. Judgements are drawn as smiley faces instead of coloured squares.</figcaption>
 </figure>
 
 <figure>
   <img src="man/figures/nos-blue.png" width="700" alt="NOS traffic-light plot with the blue theme" />
-  <figcaption><strong>NOS, <code>"blue"</code> theme</strong> — <code>plot_nos(..., theme = "blue")</code>. An alternative colour palette for the traffic-light plot.</figcaption>
+  <figcaption><strong>NOS, <code>"blue"</code> theme</strong>: <code>plot_nos(..., theme = "blue")</code>. An alternative colour palette for the traffic-light plot.</figcaption>
 </figure>
 
 <figure>
   <img src="man/figures/grade-green.png" width="700" alt="GRADE evidence profile with the green theme" />
-  <figcaption><strong>GRADE, <code>"green"</code> theme</strong> — <code>plot_grade(..., theme = "green")</code>. One of the palettes exclusive to <code>plot_grade()</code>.</figcaption>
+  <figcaption><strong>GRADE, <code>"green"</code> theme</strong>: <code>plot_grade(..., theme = "green")</code>. One of the palettes exclusive to <code>plot_grade()</code>.</figcaption>
 </figure>
 
 The full theme list is <code>"default"</code>, <code>"blue"</code>,
 <code>"gray"</code>, <code>"smiley"</code>, and <code>"smiley_blue"</code> on
 the traffic-light plots, and <code>"default"</code>, <code>"green"</code>, and
-<code>"blue"</code> on <code>plot_grade()</code> — see
+<code>"blue"</code> on <code>plot_grade()</code>: see
 [Themes and output formats](#themes-and-output-formats).
 
 ## Citation
